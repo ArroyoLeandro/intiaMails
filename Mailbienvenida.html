@@ -32,45 +32,219 @@
           url("//db.onlinewebfonts.com/t/0a265d55d57a6f6ddd93a9e544ac17d2.svg#Nunito Sans") format("svg");
       }
 
+      body {
+        padding: 0 !important;
+        margin: 0 !important;
+        font-family: "Poppins SemiBold" !important;
+      }
+
+      td {
+        padding: 0 !important;
+      }
+      .table-main {
+        width: 100% !important;
+        border-spacing: 0px !important;
+      }
+
+      /* HEADER MAIL */
+
+      .table-container {
+        width: 100% !important;
+        border-spacing: 0px !important;
+        border: 0 !important;
+      }
       .header {
-        position: relative;
+        position: relative !important;
+        padding: 0 !important;
+        width: 100%;
       }
       .img-header {
         width: 100% !important;
+        padding: 0 !important;
       }
-      .logo {
-        position: absolute;
+      .logo-container {
+        position: absolute !important;
         top: 3rem;
-        left: 3rem;
+        left: 0rem;
       }
       .img-logo {
-        width: 8rem !important;
+        width: 20rem !important;
       }
-      .logo-text {
-        font-size: 3rem;
-        letter-spacing: 0.6rem;
+
+      .img-point-top {
+        position: absolute;
+        top: 3.5rem;
+        right: 5rem;
+        width: 6rem !important;
+      }
+
+      /* MAIN CONTENT */
+      .img-principal {
+        position: relative;
+        margin: 0 auto;
+        margin-top: -10rem;
+        margin-left: 7rem;
+      }
+
+      .text-bienvenido {
+        color: #003d4d !important;
+        font-size: 7rem;
+        margin-top: 0rem;
+        margin: 0 !important;
+      }
+      .img-point-center {
+        width: 10rem;
+        margin: 3rem 0 !important;
+      }
+
+      .text-saludo {
+        color: #003d4d !important;
+        font-size: 4rem !important;
+        margin-bottom: 0;
+      }
+      .text-agradecimiento {
+        font-size: 2rem !important;
+        color: #808181 !important ;
+        margin-bottom: 0 !important;
+      }
+      .text-info {
+        font-size: 2rem;
+        font-family: "Nunito Sans" !important;
+        color: #808181;
+        margin-bottom: 5rem;
+        padding: 0 5rem;
+      }
+      .btn-verificar {
+        font-size: 1.4rem;
+        display: block !important;
+        width: 30%;
+        text-decoration: none !important;
+        color: #fcfefe !important;
+        background-color: #003d4d !important;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 5rem;
+      }
+
+      /* Footer */
+
+      .dudas {
+        width: 100% !important;
+        background-color: #003d4d !important;
+      }
+
+      .dudas h2 {
+        font-size: 3rem !important;
+        color: #fff !important;
+        text-align: center !important;
+        padding: 2rem 5rem;
+      }
+      .btn-soporte {
+        font-size: 1.4rem;
+        display: block !important;
+        width: 30%;
+        text-decoration: none !important;
+        color: #fcfefe !important;
+        border: 3px solid #fcfefe !important;
+        background-color: transparent !important;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 5rem;
       }
     </style>
   </head>
   <body>
-    <table align="center" width="100%">
+    <table cell-spacing="0" border="0" cell-padding="0" class="table-main">
       <tr>
-        <td>
-          <div class="header">
-            <img
-              src="https://raw.githubusercontent.com/ArroyoLeandro/intiaMails/d2d5e9f4b681186b75afb8ef8725ab621f628a61/img/header-bienvenida.svg"
-              alt="fondo header"
-              class="img-header"
-            />
-            <div class="logo">
-              <img
-                src="https://raw.githubusercontent.com/ArroyoLeandro/intiaMails/d2d5e9f4b681186b75afb8ef8725ab621f628a61/img/logo.svg"
-                alt="logotipo"
-                class="img-logo"
-              />
-              <span class="logo-text">INTIA</span>
-            </div>
-          </div>
+        <td align="center">
+          <table cell-spacing="0" border="0" cell-padding="0" class="table-container">
+            <tr>
+              <td>
+                <div class="header">
+                  <img
+                    src="https://raw.githubusercontent.com/ArroyoLeandro/intiaMails/d2d5e9f4b681186b75afb8ef8725ab621f628a61/img/header-bienvenida.svg"
+                    alt="fondo header"
+                    class="img-header"
+                  />
+                  <div class="logo-container">
+                    <img
+                      src="https://raw.githubusercontent.com/ArroyoLeandro/intiaMails/204d418f645e6de3866258a4da7e23a98938cad4/img/logo.svg"
+                      alt="logotipo"
+                      class="img-logo"
+                    />
+                  </div>
+                  <img
+                    src="https://raw.githubusercontent.com/ArroyoLeandro/intiaMails/204d418f645e6de3866258a4da7e23a98938cad4/img/points-top.svg"
+                    alt=""
+                    class="img-point-top"
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <img
+                  src="https://raw.githubusercontent.com/ArroyoLeandro/intiaMails/204d418f645e6de3866258a4da7e23a98938cad4/img/principal-bienvenida.svg"
+                  alt=""
+                  class="img-principal"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <h1 class="text-bienvenido">¡Bievenido!</h1>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <img
+                  src="https://raw.githubusercontent.com/ArroyoLeandro/intiaMails/204d418f645e6de3866258a4da7e23a98938cad4/img/points-center.svg"
+                  alt=""
+                  class="img-point-center"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <h2 class="text-saludo">Hola, Nombre</h2>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <p class="text-agradecimiento">¡Gracias por registrarte en Intia!</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <p class="text-info">Haz clic en el botón que se encuentra abajo para veriﬁcar tu email y te ayudaremos a comenzar.</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <a href="#" class="btn-verificar">VERIFICAR CUENTA</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="dudas">
+                <h2>Si tenés dudas comunicate con nuestro equipo</h2>
+                <a href="#" class="btn-soporte">SOPORTE TÉCNICO</a>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <div class="social-media">
+                  <a href="#">
+                    <img src="" alt="" />
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center"></td>
+            </tr>
+          </table>
         </td>
       </tr>
     </table>
