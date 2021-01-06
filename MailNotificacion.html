@@ -1,9 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Email Notification</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      @media screen {
+        @font-face {
+          font-family: "Poppins SemiBold";
+          src: url("//db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.eot");
+          src: url("//db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.eot?#iefix") format("embedded-opentype"),
+            url("//db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.woff2") format("woff2"),
+            url("//db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.woff") format("woff"),
+            url("//db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.ttf") format("truetype"),
+            url("//db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.svg#Poppins SemiBold") format("svg");
+        }
+
+        @font-face {
+          font-family: "Nunito";
+          src: url("//db.onlinewebfonts.com/t/fa4111e39a6ab2895f7e5a9497e97b2b.eot");
+          src: url("//db.onlinewebfonts.com/t/fa4111e39a6ab2895f7e5a9497e97b2b.eot?#iefix") format("embedded-opentype"),
+            url("//db.onlinewebfonts.com/t/fa4111e39a6ab2895f7e5a9497e97b2b.woff2") format("woff2"),
+            url("//db.onlinewebfonts.com/t/fa4111e39a6ab2895f7e5a9497e97b2b.woff") format("woff"),
+            url("//db.onlinewebfonts.com/t/fa4111e39a6ab2895f7e5a9497e97b2b.ttf") format("truetype"),
+            url("//db.onlinewebfonts.com/t/fa4111e39a6ab2895f7e5a9497e97b2b.svg#Nunito") format("svg");
+        }
+
+        @font-face {
+          font-family: "Nunito Sans";
+          src: url("//db.onlinewebfonts.com/t/0a265d55d57a6f6ddd93a9e544ac17d2.eot");
+          src: url("//db.onlinewebfonts.com/t/0a265d55d57a6f6ddd93a9e544ac17d2.eot?#iefix") format("embedded-opentype"),
+            url("//db.onlinewebfonts.com/t/0a265d55d57a6f6ddd93a9e544ac17d2.woff2") format("woff2"),
+            url("//db.onlinewebfonts.com/t/0a265d55d57a6f6ddd93a9e544ac17d2.woff") format("woff"),
+            url("//db.onlinewebfonts.com/t/0a265d55d57a6f6ddd93a9e544ac17d2.ttf") format("truetype"),
+            url("//db.onlinewebfonts.com/t/0a265d55d57a6f6ddd93a9e544ac17d2.svg#Nunito Sans") format("svg");
+        }
+      }
+
+      /* CLIENT-SPECIFIC STYLES */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* RESET STYLES */
+      img {
+        border: 0;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+
+      table {
+        border-collapse: collapse !important;
+      }
+
+      body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+
+      /* iOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* MOBILE STYLES */
+      @media screen and (max-width: 450px) {
+        h1 {
+          font-size: 32px !important;
+          line-height: 32px !important;
+        }
+      }
+
+      /* ANDROID CENTER FIX */
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body style="background-color: #fff; margin: 0 !important; padding: 0 !important">
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      style="
+        margin: 0 auto;
+        background-image: url(https://raw.githubusercontent.com/ArroyoLeandro/intiaMails/b0c08107cc8aa7cd6144ee0997bb0aeb0cbde57c/img/header.svg);
+        width: 600px;
+        background-repeat: no-repeat;
+      "
+    >
+      <!-- LOGO -->
+      <tr>
+        <td align="center">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 450px">
+            <tr>
+              <td align="center" valign="top" style="padding: 40px 10px 40px 10px"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 40px 10px 0px 10px">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 450px; margin-bottom: 30px">
+            <tr>
+              <td
+                bgcolor="#ffffff"
+                align="center"
+                valign="top"
+                style="
+                  padding: 0px 20px 20px 20px;
+                  border-radius: 20px 20px 20px 20px;
+                  color: #003d4d;
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 48px;
+                  font-weight: 600;
+                  letter-spacing: 4px;
+                  line-height: 48px;
+                  box-shadow: 2px 0 10px #808081;
+                "
+              >
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 450px">
+                  <tr>
+                    <td align="center">
+                      <h1 style="font-size: 26px; font-weight: 600; font-family: 'Poppins', sans-serif; color: #003d4d">Tienes notificaciones nuevas</h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <div class="img-container center fixedwidth" align="center" style="padding-right: 0px; padding-left: 0px">
+                        <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+                        <img
+                          class="center fixedwidth"
+                          align="center"
+                          border="0"
+                          src="https://raw.githubusercontent.com/ArroyoLeandro/Antia/gh-pages/assets/img/perfil.jpg"
+                          alt="Alternate text"
+                          title="Alternate text"
+                          style="text-decoration: none; display: block; border: 3px solid #fab300 !important; border-radius: 50% !important; width: 160px; height: 160px"
+                          width="160"
+                          height="160"
+                        />
+                        <!--[if mso]></td></tr></table><![endif]-->
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      bgcolor="#ffffff"
+                      align="center"
+                      style="padding: 20px 30px 0 30px; color: #003d4d; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 600; line-height: 25px"
+                    >
+                      <h6 style="font-size: 26px; text-align: center; margin: 0; font-weight: 600">Norberto Riccitelli</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      bgcolor="#ffffff"
+                      align="center"
+                      style="
+                        padding: 20px 30px 40px 30px;
+                        color: #808081;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 25px;
+                        border-radius: 20px 20px 20px 20px;
+                      "
+                    >
+                      <h6 style="font-size: 18px; text-align: center; margin: 0; font-weight: 600">Agente Inmobiliario</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="border-radius: 8px; padding-bottom: 30px" bgcolor="#fff">
+                      <a
+                        href="https://www.google.com"
+                        target="_blank"
+                        style="
+                          font-size: 16px;
+                          font-weight: 600;
+                          font-family: 'Poppins', sans-serif;
+                          color: #ffffff;
+                          text-decoration: none;
+                          padding: 15px 20px;
+                          border-radius: 8px;
+                          width: 300px;
+                          background-color: #003d4d;
+                        "
+                        >VER NOTIFICACIONES
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#F1F3F7" align="center" style="padding: 40px 30px 60px 30px">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 450px">
+            <tr>
+              <td
+                bgcolor="#F1F3F7"
+                align="center"
+                valign="top"
+                style="font-family: 'Poppins', sans-serif; font-size: 48px; font-weight: 600; letter-spacing: 4px; line-height: 48px"
+              >
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px">
+                  <tr align="center">
+                    <td align="center">
+                      <a href="#tw" style="text-decoration: none" target="_blank " style="width: 30px; height: 30px">
+                        <img
+                          src="https://raw.githubusercontent.com/ArroyoLeandro/antia-landing/efff646d8d17d36d302f3e17b434e8452af3b5fd/img/logo-tw.svg"
+                          alt=""
+                          width="30"
+                          height="30"
+                        />
+                      </a>
+                      <a href="#in" style="text-decoration: none" target="_blank" style="width: 30px; height: 30px">
+                        <img
+                          src="https://raw.githubusercontent.com/ArroyoLeandro/antia-landing/efff646d8d17d36d302f3e17b434e8452af3b5fd/img/logo-in.svg"
+                          alt=""
+                          width="30"
+                          height="30"
+                        />
+                      </a>
+                      <a href="#fb" style="text-decoration: none" target="_blank" style="width: 30px; height: 30px">
+                        <img
+                          src="https://raw.githubusercontent.com/ArroyoLeandro/antia-landing/efff646d8d17d36d302f3e17b434e8452af3b5fd/img/logo-fb.svg"
+                          alt=""
+                          width="30"
+                          height="30"
+                        />
+                      </a>
+                      <a href="#instagram" style="text-decoration: none" target="_blank" style="width: 30px; height: 30px">
+                        <img
+                          src="https://raw.githubusercontent.com/ArroyoLeandro/antia-landing/efff646d8d17d36d302f3e17b434e8452af3b5fd/img/logo-instagram.svg"
+                          alt=""
+                          width="30"
+                          height="30"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#F1F3F7" align="center" style="color: #808081; font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600; line-height: 25px">
+                      <h6 style="text-align: center; margin: 0; font-family: 'Poppins', sans-serif; font-weight: 600">
+                        Contacta a nuestro soporte técnico si tenés una consulta
+                      </h6>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
